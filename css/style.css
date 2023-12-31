@@ -1,0 +1,35 @@
+.text {
+    width: 50%;
+}
+
+p {
+    display: inline-block;
+    width: 0;
+    font-size: 5.5rem;
+    font-weight: bold;
+    white-space: nowrap;
+    background-image: linear-gradient(110deg, #76e650 -1.13%, #f9d649 15.22%, #f08e35 32.09%, #ec5157 48.96%, #ff18bd 67.94%, #1a4bff 85.34%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    border-right: 1.4rem solid #0d62da;
+    animation: typewriting 1.2s steps(15) 2s 1 normal forwards, typewriting-cursor 1s steps(1) infinite;
+}
+
+@keyframes typewriting {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes typewriting-cursor {
+    0% {
+        border-right-color: transparent;
+    }
+    50% {
+        border-right-color: #0d62da;
+    }
+}
